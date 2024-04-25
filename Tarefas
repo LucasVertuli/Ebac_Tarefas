@@ -1,1 +1,71 @@
 
+
+
+
+function Onibus(fabricante,rodas,assentos,anoFabricacao) {
+
+    this.fabricante = fabricante;
+    this.rodas = rodas;
+    this.assentos = assentos;
+    this.anoFabricacao = anoFabricacao;
+}
+
+
+function urbano (fabricante, rodas,assentos,anoFabricacao,pe){
+
+    this.fabricante = fabricante;
+    this.rodas = rodas;
+    this.assentos = assentos;
+    this.pe = pe;
+
+    Onibus.call(this, anoFabricacao);
+}
+
+
+function viagem (fabricante, rodas,assentos,anoFabricacao,semi) {
+
+    this.fabricante = fabricante;
+    this.rodas = rodas;
+    this.assentos = assentos;
+    this.semi = semi
+
+    Onibus.call(this, anoFabricacao )
+
+}
+
+
+function luxo (fabricante, rodas,assentos,anoFabricacao,leito) {
+
+    this.fabricante = fabricante;
+    this.rodas = rodas;
+    this.assentos = assentos;
+    this.leito = leito
+    
+    Onibus.call(this,anoFabricacao )
+
+}
+
+const anoFabricacao1 = new Onibus ("Mercedes", 8, 50, 2005)
+
+
+const onibusUrbano = new urbano ("Mercedes", "8", 50, 2005, "Com suporte para viagem com pessoas em pé")
+
+console.log(onibusUrbano);
+
+
+const onibusViagem = new viagem ("Mercedes", 12, 42, 2010, "Com semi-leito");
+
+console.log(onibusViagem);
+
+
+const onibusLuxo = new luxo ("Mercedes",16, 32, 2020, "Com leito completo");
+
+console.log(onibusLuxo);
+
+//typeof = para descobrir o tipo de dado aceito naquele atributo.
+
+//instanceof = Para saber a qual objeto a instancia foi criada. Retorna true or false.
+
+//objeto.instancia = para saber qual valor está alocado no atributo.
+
+//objeto['instancia'] = para saber qual valor está alocado no atributo.
