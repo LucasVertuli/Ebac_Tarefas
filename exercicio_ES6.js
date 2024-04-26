@@ -1,6 +1,33 @@
 //criar uma array de objetos, onde teremos como atributos do objeto: o nome e a nota de alunos.
 
-const arrayDeObjetos = []
+// const arrayDeObjetos = [
+//     {nome: 'Lucas', nota : 5},
+//     {nome:'Maria', nota:7},
+//     {nome:'carlos', nota:8},
+//     {nome:'João', nota: 0},
+//     {nome: 'Graça', nota: 10},
+//     {nome: 'Clara', nota: 4},
+//     {nome: 'Matheus', nota: 6}
+// ]
+
+// //Criar uma função que irá retornar apenas os alunos que tiveram nota maior ou igual à 6.
+
+// function aprovado(){
+//     for (let i =0; i > arrayDeObjetos.lenthg; i++) {
+//         let aprovado() = this.nota >= 6{
+//             console.log(`Parabéns ${this.nome}, você foi aprovado(a)!`)
+//     }
+//             if (this.nota >= 6)
+//             console.log(`Parabéns ${this.nome}, você foi aprovado(a)!`)
+//                 else {
+//                     console.log(`Que pena ${this.nome}, você foi reprovado(a), tente novamente!`)
+//                 }
+//         }
+
+
+
+
+
 
     class Notas {
         constructor(nomeDoAluno, notaDoAluno){
@@ -19,8 +46,6 @@ const arrayDeObjetos = []
         }
         
     }
-
-arrayDeObjetos.push(Notas)
 
 const aluno = new Notas ('Lucas', 5);
 aluno.aprovado();
